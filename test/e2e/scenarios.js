@@ -83,11 +83,5 @@ describe('PhoneCat App', function() {
     it('should display nexus-s page', function() {
       expect(element(by.binding('phone.name')).getText()).toBe('Nexus S');
     });
-
-
-    it('should display thumbnails', function(){
-      var phoneList = element.all(by.repeater('img in phone.images'));
-      expect(phoneList.count()).toBe(4);
-    });
   });
 });
